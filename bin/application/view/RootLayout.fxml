@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="740.0" prefWidth="1200.0" stylesheets="@Metro.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Home" />
+          <Menu mnemonicParsing="false" text="Messages" />
+            <Menu mnemonicParsing="false" text="Log" />
+            <Menu disable="true" mnemonicParsing="false" text="                                                                                                                                                                         " />
+            <Menu mnemonicParsing="false" text="Account">
+              <items>
+                  <MenuItem mnemonicParsing="false" text="Change Password" />
+                <MenuItem mnemonicParsing="false" text="Sign Out" />
+              </items>
+            </Menu>
+        </menus>
+         <padding>
+            <Insets bottom="5.0" top="5.0" />
+         </padding>
+      </MenuBar>
+   </top>
+</BorderPane>
