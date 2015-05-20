@@ -45,6 +45,7 @@ public class BookData {
 	                    if(parts.length<1){
 	                    	break;
 	                    }
+	                    //add finding missing
 	                    if(parts.length<6){
 	                    	isbn="none";
 	                    }else{
@@ -112,6 +113,7 @@ public class BookData {
             String add2File="";
             String title,isbn;
 			Book.g grade;
+			int missing;
 			double price;
 			BookOrder tempH;
 			ArrayList<BookOrder> arrayRoom;
@@ -125,6 +127,7 @@ public class BookData {
             	arrayRoom=b.getOrders();
             	tempH=arrayRoom.get(0);
             	numberb=tempH.getRoom();
+            	missing=b.getMissing();
             	add2File=title+" "+grade+" "+numberb+" "+total+" "+price+" "+isbn;
             	
             }
